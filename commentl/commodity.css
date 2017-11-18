@@ -1,0 +1,21 @@
+#mybody{
+	width: 450px;
+	height: 305px;
+	border: 1px solid;	
+	margin-left: 600px;
+}
+#Title{
+	width: 450px;
+	height: 50px;
+	border: 1px solid;
+}
+#Star{
+	width: 450px;
+	height: 50px;
+	border: 1px solid;
+	}
+#content{
+	width: 450px;
+	height: 200px;
+	border: 1px solid;
+}
