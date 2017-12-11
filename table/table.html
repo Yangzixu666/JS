@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表格</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		*{
+			font-size: 36px;
+		}
+		tr{
+			height: 30px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			
+			plus=function()
+			{
+				var newtr=document.createElement("tr");
+				document.getElementsByTagName("table")[0].appendChild(newtr);
+				for(var i=0;i<12;i++)
+				{
+					var newtd=document.createElement("td");
+					newtr.appendChild(newtd);
+				}	
+			}
+			minu=function()
+			{
+				var mytr=document.getElementsByTagName("table")[0].lastChild;
+				document.getElementsByTagName("table")[0].removeChild(mytr);
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<table width="1000px" border="1">
+		<tr height="30px">
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+	<input type="button" name="" id="add" value="添加一行" style="margin-left:840px;" onclick="plus();" />
+	<input type="button" name="" id="delete" value="删除一行" style="margin-left:840px;" onclick="minu();" />
+</body>
+</html>
