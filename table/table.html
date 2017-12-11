@@ -10,6 +10,9 @@
 		tr{
 			height: 30px;
 		}
+		.bri{
+
+		}
 	</style>
 	<script type="text/javascript">
 		window.onload=function()
@@ -18,20 +21,45 @@
 			plus=function()
 			{
 				var newtr=document.createElement("tr");
+				newtr.onmouseover=function()
+				{
+					this.style.backgroundColor="red";
+				}
+				newtr.onmouseout = function()
+				{
+            		this.style.backgroundColor="white";
+        		}
 				document.getElementsByTagName("table")[0].appendChild(newtr);
 				for(var i=0;i<12;i++)
 				{
 					var newtd=document.createElement("td");
 					newtr.appendChild(newtd);
-				}	
+				}
+				
 			}
+
 			minu=function()
 			{
 				var mytr=document.getElementsByTagName("table")[0].lastChild;
-				document.getElementsByTagName("table")[0].removeChild(mytr);
+				document.getElementsByTagName("table")[0].removeChild(mytr);		
+				
 			}
+			document.getElementsByTagName("tr")[0].onmouseover=function()
+				{
+					this.style.backgroundColor="red";
+				}
+				document.getElementsByTagName("tr")[0].onmouseout = function()
+				{
+            		this.style.backgroundColor="white";
+        		}
+			
+			
+				
+				
+	}
+			
 
-		}
+		
 	</script>
 </head>
 <body>
