@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<script src="jquery-3.2.1.slim.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+				$('input:eq(3)').css({
+					"width":"100px","height":"50px"
+				});
+				
+
+				$('input[name="button"]').click(function(){
+
+					var text_value=
+					$('input[name="password2"]').val();
+					if(text_value!=$('input[name="password1"]').val())
+					{
+						if($('input[name="password1"]').val()!="")
+							alert("两次密码输入不一致");
+						else
+						{
+							alert("密码不能为空");
+						}
+					}
+					
+					else if($('input[name="username"]').val()=="")
+					{
+						alert("用户名不能为空");
+					}
+					else if($('input[name="password1"]').val()=="")
+					{
+						alert("密码不能为空");
+					}
+					else{
+						alert('注册成功');
+					}
+
+
+				});
+
+			});
+		</script>
+	</head>
+	<body>
+		<form>
+			&nbsp;&nbsp;用户名:<input type="text" name="username"/><br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;密码:<input type="password" name="password1"/><br/>
+			确认密码:<input type="password" name="password2"/><br/>
+			<input type="button" name="button" value="注册" />
+		</form>
+	</body>
+</html>
