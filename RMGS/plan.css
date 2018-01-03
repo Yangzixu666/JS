@@ -1,0 +1,143 @@
+*{
+	font-size:12px;
+	margin:0px;
+	padding:0px;
+}
+
+#mybody{
+	
+	width: 1200px;
+	height: 900px;
+	margin-left:200px;
+}
+
+#top{
+	height:30px;
+	background-color: orange;
+}
+span{
+	display: block;
+	float: right;
+}
+#Nav{
+	
+	width: 1200px;
+	height: 100px;
+}
+#nav{
+	margin-top: 20px;
+	margin-left:20px;
+	list-style: none;
+	line-height: 50px;
+
+}
+#nav a:link{
+	display:block;
+	width:230px;
+	color: #111;
+	text-align:center;
+	text-decoration:none;
+	background:#F0F0F0;
+}
+#nav a:visited{
+	display:block;
+	width:230px;
+	color: #111;
+	text-align:center;
+	text-decoration:none;
+	background:#F0F0F0;
+}
+#nav a:hover{
+	color: yellow;
+	text-decoration: underline;
+	font-weight: bold;
+	background:orange;
+}
+#nav ul{
+	list-style: none;
+
+}
+#nav li{
+	float:left;
+	width: 230px;
+}
+
+#nav li ul li a:hover{
+	background:orange;
+}
+
+#nav li ul{
+		display:none;
+}
+#nav li.Show ul{
+		display:block;
+		width: 230px;
+		position: absolute;
+}
+
+#roll{
+	width: 1200px;
+	
+}
+#button1{
+	width: 250px;
+	height: 50px;
+}
+#button2{
+	width: 250px;
+	height: 50px;
+}
+#log_in
+{
+	height: 300px;
+	display: none;
+}
+#button3{
+	width: 60px;
+	height: 30px;
+}
+#button4{
+	width: 60px;
+	height: 30px;
+}
+#button5{
+	width: 60px;
+	height: 30px;
+}
+.pic{
+	float: left;
+	margin-left: 120px;
+}
+#foot{
+	margin-top:100px;
+	
+}
+#foot a:link{
+	color: black;
+}
+#foot a:visited{
+	color: black;
+}
+p{
+	font-size: 20px;
+}
+#bottom{
+	height: 50px;
+	background-color:orange;
+}
+#register{
+	display: none;
+	
+
+}
+#zhuce{
+	width: 600px;
+	
+	float: left;
+}
+#qr{
+	width: 500px;
+	float: left;
+	
+	height: 346px;
+}
