@@ -16,7 +16,7 @@ window.onload=function()
 		if(flag<=4)
 		{
 			var temp=document.getElementById("imgroll");
-			temp.src="image/"+flag+".jfif";
+			temp.src="images/"+flag+".jfif";
 			flag++;
 		}
 		else
