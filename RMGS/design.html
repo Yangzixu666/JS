@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>河北师范大学软件学院_源码公社</title>
+		<link rel="stylesheet" type="text/css" href="plan.css">
+		<script src="soft.js"></script>
+		<script src="jquery-3.2.1.min.js"></script>
+		<script>
+			$(function(){
+				$("#button1").click(function(){
+				$("#roll").fadeOut(1000);
+				$("#log_in").fadeIn(2000);
+				$("#commit").fadeOut(1000);
+				
+
+				});
+				$("#button3").click(function(){
+						var user=$("input[name='user']").val();
+						var pas=$("input[name='password']").val();
+						if(user=='')
+							alert("用户名不能为空!");
+						else if(pas=="")
+							alert("密码不能为空！");
+						else
+							alert("登录成功！");
+					});
+
+				$("#button5").click(function(){
+					var reuser=$("input[name='user2']").val();
+					var repas=$("input[name='password2']").val();
+					var repas2=$("input[name='password3']").val();
+					var phonenum=$("input[name='phone']").val();
+					var check=$("input[type='checkbox']");
+					
+
+
+					var tag=0;
+					if(reuser=="")
+						alert("真实姓名不能为空！");
+					else if(repas=="")
+						alert("密码不能为空！");
+					else if(repas2=="")
+						alert("确认密码不能为空!");
+					else if(repas2!=""&&repas2!=repas)
+						alert("两次密码输入不一致！");
+					else if(phonenum=="")
+						alert("手机号码不能为空！");
+					else if(!check.is(":checked"))
+					{
+						alert("必选选择一个方向！");
+					}
+					else
+					{
+						alert("恭喜"+reuser+"同学注册成功！");
+
+					}
+					
+				});
+
+				$("#button2").click(function(){
+					$("#roll").fadeOut(1000);
+					$("#register").fadeIn(2000);
+					$("#commit").fadeOut(1000);
+
+
+				});
+				$("#button4").click(function(){
+					$("#log_in").fadeOut(1000);
+					$("#register").fadeIn(2000);
+				});
+
+
+
+
+
+
+
+});
+		
+			
+		</script>
+	</head>
+	<body>
+		<div id="top"><font size="20px" color="white"><span>联系我们</span></font>
+		</div>
+		<div id="mybody">
+			<div id="search">
+				<img src="image/logo.png"/>
+				<img src="image/logo.jpg"/>
+			</div>
+			<div id="Nav">
+				<ul id="nav">
+					<li><a href="#">社团简介</a>
+						<ul>
+							<li><a href="#">社团介绍</a></li>
+							<li><a href="#">社团成员</a></li>
+							<li><a href="#">社团历史</a></li>
+						</ul>
+
+					</li>
+					<li><a href="#">社团相册</a>
+						<ul>
+							<li><a href="#">比赛相册</a></li>
+							<li><a href="#">活动相册</a></li>
+							<li><a href="#">社团合影</a></li>
+						</ul>
+					</li>
+					<li><a href="#">社团日志</a>
+						<ul>
+							<li><a href="#">社团日志</a></li>
+							<li><a href="#">社团日志</a></li>
+							<li><a href="#">社团日志</a></li>
+						</ul>
+					</li>
+					<li><a href="#">社团好友</a>
+						<ul>
+							<li><a href="#">社团好友</a></li>
+							<li><a href="#">社团好友</a></li>
+							<li><a href="#">社团好友</a></li>
+						</ul>
+					</li>
+					<li><a href="#">学习资料</a>
+						<ul>
+							<li><a href="#">编程资料</a></li>
+							<li><a href="#">编程资料</a></li>
+							<li><a href="#">编程资料</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="roll">
+				<img src="image/1.jfif" id="imgroll" />
+			</div>
+			<div id="register" >
+				<div id="zhuce" align="center">
+					<form>
+						<img src="image/log.png"/><br/>
+						年级：<select>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+							<option>2019</option>
+						</select><br/>
+						真实姓名：&nbsp;&nbsp;<input type="text" name="user2" style="height: 20px;"/><br/>
+						 密 码：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password2" style="height: 20px;"/><br/>
+						 确认密码：&nbsp;&nbsp;<input type="password" name="password3" style="height: 20px;"/><br/>
+						 手机号码：&nbsp;&nbsp;<input type="text" name="phone" style="height: 20px;"/><br/>
+						 选择社团方向：算法竞赛部：<input type="checkbox" name="1" style="height: 20px;"/>
+						 信息安全竞赛部：<input type="checkbox" name="1" style="height: 20px;"/><br/>
+						 <input type="button" name="button5" id="button5" value="确认注册" />
+					</form>
+				</div>
+				<div id="qr" align="center">
+					<img src="image/QR.png"/>
+				</div>
+			</div>
+			<div id="log_in" align="center">
+				<form>
+					<img src="image/log.png"/><br/>
+					用户名：<input type="text" name="user" style="height: 20px;" /><br/>
+					 密 码：&nbsp;&nbsp;<input type="password" name="password" style="height: 20px;"/><br/>
+					 <br/>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					 <input type="button" name="button3" value="登录" id="button3"/>
+					 <input type="button" name="button3" value="注册" id="button4"/>
+				</form>
+
+			</div>
+
+
+
+
+
+			<div id="commit">
+				<form>
+					<table border="1px" width="1200px">
+						<tr align="center">
+							<td><input type="button" name="button1" value="登录" id="button1" />
+							</td>
+							<td>
+								<input type="button" name="button2" value="加入我们" id="button2" />
+							</td>
+						</tr>
+					</table>
+					
+				</form>
+			</div>
+			<div id="foot" align="center">
+				<a href="#"><div class="pic"><img src="image/i3.jpg"/>
+					<br/>
+					<p>社团月刊</p>
+				</div></a>
+				<a href="#">
+					<div class="pic">
+					<img src="image/i4.jpg"/>
+					<br/>
+					<p>社团荣誉</p>
+				</div>
+				</a>
+				<a href="#">
+					<div class="pic">
+				<img src="image/i5.jpg"/>
+				<br/>
+					<p>社团之星</p>
+				</div>
+				</a>
+				<a href="#">
+					<div class="pic"><img src="image/i6.jpg"/>
+					<br/>
+					<p>社团关注</p>
+				</div>
+				</a>
+				<a href="#">
+					<div class="pic"><img src="image/i7.jpg"/>
+				<br/>
+					<p>社团实训</p></div>
+				</a>
+				
+			</div>
+			
+			
+		</div>
+		<div id="bottom" align="center">
+			<br/>
+				<p style="color: white;">冀ICP备12345678号-1</p>
+			</div>
+	</body>
+</html>
